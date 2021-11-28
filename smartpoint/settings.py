@@ -32,7 +32,8 @@ ALLOWED_HOSTS = ['*']
 CORS_ORIGIN_WHITELIST = [
     'https://smart-points-kappa.vercel.app',
     'http://smartpoints.freevnn.com/',
-    'localhost:3000'
+    'localhost:3000',
+    'localhost:8000'
 ]
 
 # Application definition
