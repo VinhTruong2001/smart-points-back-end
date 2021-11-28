@@ -28,12 +28,12 @@ SECRET_KEY = 'django-insecure-2=h-e%f#@#&r_s*)6ej7ow3^u)+9=17op)n2hkubtu(b49i5oc
 DEBUG = False
 
 CORS_ORIGIN_ALLOW_ALL = False
-ALLOWED_HOSTS = [
+ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_WHITELIST = [
     'https://smart-points-kappa.vercel.app',
     'http://smartpoints.freevnn.com/',
     'localhost:3000'
 ]
-
 
 # Application definition
 
