@@ -1,2 +1,3 @@
+release: python manage.py makemigrations --noinput
 release: python manage.py migrate --noinput
-gunicorn smartpoint.wsgi:application
+web:gunicorn smartpoint.wsgi:application
