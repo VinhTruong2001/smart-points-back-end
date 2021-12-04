@@ -24,13 +24,14 @@ class UserInfo(models.Model):
     displayName = models.CharField(max_length=100, default='')
     email = models.EmailField()
     profilePic = models.ImageField(upload_to=create_imgs_directory, null=True)
-    phone = models.CharField(max_length=11, default='')
+    defaultGooglePhotoUrl = models.CharField(max_length=200, default='', blank=True, null=True)
+    phone = models.CharField(max_length=11, default='', null=True)
     GENDER_CHOICES = (
         ('M', 'Nam'),
         ('F', 'Nữ')
     )
-    gender = models.CharField(max_length=1, choices=GENDER_CHOICES, default='M')
-    dateOfBirth = models.DateField(default=datetime.date.today, blank=True)
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES, default='M', null=True)
+    dateOfBirth = models.DateField(default=datetime.date.today, blank=True, null=True)
     isPremium = models.BooleanField(default=False)
     templateLiked = ArrayField(
         models.CharField(max_length=100),

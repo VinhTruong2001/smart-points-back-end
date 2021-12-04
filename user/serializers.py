@@ -32,4 +32,4 @@ class ChangePasswordSerializer(serializers.Serializer):
 class UserInfoSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = UserInfo
-        fields = ('uid', 'displayName', 'email', 'profilePic', 'phone', 'gender', 'dateOfBirth', 'isPremium', 'templateLiked', 'templateDownloaded')
+        fields = ('uid', 'displayName', 'email', 'profilePic', 'defaultGooglePhotoUrl', 'phone', 'gender', 'dateOfBirth', 'isPremium', 'templateLiked', 'templateDownloaded')
