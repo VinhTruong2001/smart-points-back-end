@@ -11,9 +11,9 @@
   
 ###### Các đường dẫn để xem api trả về:
   -  **api/templates/** : Dữ liệu tât cả templates
-  -  **api/templates/<<str:id>>** : Dữ liệu của template theo <<id>>
+  -  **api/templates/<<str:id>>** : Dữ liệu của template theo id
   -  **api/templates/standard-pagination/** : Dữ liệu của template theo phân trang 6 templates/trang
   -  **api/templates/small-pagination/** : Dữ liệu của template theo phân trang 9 templates/trang
   -  **api/useruid/** : Dữ liệu uid của user (Cần phản gửi kèm token để lấy được, dùng cho quá trình đăng nhập)
   -  **api/userdata/** : Dữ liệu của toàn bộ user (Không bao gồm password)
-  -  **api/userdata/<<str:uid>>** : Dữ liệu của user theo <<uid>>
+  -  **api/userdata/<<str:uid>>** : Dữ liệu của user theo uid
